@@ -1,0 +1,70 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial;
+  margin: 0;
+  background: #f6fff9;
+  color: #0F141A;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.mark {
+  background: #00D084;
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.card {
+  background: #fff;
+  margin: 14px;
+  padding: 14px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .05);
+}
+
+.btn,
+.chip {
+  background: #00D084;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 700;
+}
+
+.meter {
+  height: 12px;
+  background: #e7f7f1;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.meter .fill {
+  background: #00D084;
+  width: 40%;
+  height: 100%;
+}
+
+.tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  border-top: 1px solid #eee;
+  padding: 10px;
+}
