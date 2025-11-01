@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SyncFuel • Dashboard</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="mark">SF</div>
+    <strong>SyncFuel</strong>
+    <button id="installBtn" class="ghost">Install</button>
+  </header>
+
+  <main class="content">
+    <section class="card">
+      <h3>Fuel Alert</h3>
+      <p id="fuelAlert">Calculating…</p>
+    </section>
+
+    <section class="card">
+      <h3>Hydration</h3>
+      <div class="meter"><div class="fill" id="hydrationFill"></div></div>
+      <p><span id="hydrationNow">0.84</span>/<span id="hydrationGoal">2.0</span> L</p>
+      <button class="chip" data-h2o="0.25">+250 ml</button>
+    </section>
+  </main>
+
+  <nav class="tabs">
+    <button class="tab active">Dashboard</button>
+  </nav>
+
+  <script>
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js');
+  </script>
+</body>
+</html>
